@@ -25,7 +25,26 @@ Scoring customers and leads on behaviour, then using the score to make channel a
 > ✏️ _Explain your scoring logic in plain English: signals, weights, recency, bands. A non-technical marketer should understand it._
 
 ## Results
-> ✏️ _Your 2–3 charts from `images/` and what they show. e.g. "Highly engaged customers converted at X% vs Y% for dormant", "The campaign drove Z incremental orders; lift was concentrated in the Engaged band."_
+## Results
+
+### Higher bands buy more
+![Customers who ordered by band](images/orders_by_band.png)
+
+Each band outperforms the one below it. 60% of Highly engaged customers ordered in the last 90 days, compared with 20% of Inactive customers.
+
+![Share of customers vs share of revenue](images/revenue_share_by_band.png)
+
+The top 25% of customers generate 46% of revenue. Dormant and Inactive make up 30% of the base but only 13% of revenue.
+
+### Campaign lift: directional, not proven
+![Winter Promo conversion, Target vs Control](images/campaign_lift_by_band.png)
+
+The Winter Promo lifted conversion from 4.2% (control) to 5.8% (mailed): about 37 incremental orders and £3,800. **This is not statistically significant** (p = 0.27), because the control group was only 287 people. Proving a lift this size would need a control of about 1,430 (a base of about 14,300 at a 90/10 split).
+
+By band, the lift is concentrated in Engaged and Highly engaged customers, and mailing Inactive customers showed no benefit. Band-level control groups are small (44–78 people), so these are signals to test further, not conclusions.
+
+### What this does and doesn't prove
+The data is synthetic, and the generator links engagement to purchasing. So these results show the **method** works: the scoring, weighting and banding correctly recover real behaviour. They don't prove engagement drives sales in a real business. That needs real data and a properly sized control group, as set out above.
 
 ## How the score is used
 > ✏️ _The decision rules. e.g. Highly engaged → email only, never print; Dormant → print or SMS win-back; MQL → hand to sales._
