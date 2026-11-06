@@ -25,7 +25,6 @@ Scoring customers and leads on behaviour, then using the score to make channel a
 > ✏️ _Explain your scoring logic in plain English: signals, weights, recency, bands. A non-technical marketer should understand it._
 
 ## Results
-## Results
 
 ### Higher bands buy more
 ![Customers who ordered by band](images/orders_by_band.png)
