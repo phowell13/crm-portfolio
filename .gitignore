@@ -1,0 +1,10 @@
+# Generated data (recreate with scripts/generate_data.py). Small samples are kept in data/sample/.
+**/data/raw/
+**/data/output/
+
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+.DS_Store
