@@ -70,3 +70,12 @@ Keep entries short. Add a new one whenever you change your mind; the history is 
 - Four bands with Dormant starting at 0.1: Lapsing held 40% of the base, too broad to act on.
 - Four bands with Dormant starting at 2: Dormant tripled to 30%, including 533 people still showing some activity.
 **How I'd check it:** Compare conversion and orders by band. Each band should perform clearly better than the one below. Review band sizes monthly; if a band grows or shrinks sharply, check whether behaviour changed or the thresholds need revisiting.
+
+
+### 2026-11-06 Winter Promo lift: report as directional, not proven
+**Decision:** Report the campaign lift as directional and keep the original data, rather than regenerating a larger base to force a significant result.
+**Why:** Mailed customers converted at 5.8% vs 4.2% for the control group: a 38% relative lift, worth about 37 extra orders and £3,800. But the control group is only 287 people, and the result is not statistically significant (p = 0.27). To reliably detect a lift this size (80% power, 95% confidence) with a 90/10 split, the control group needs about 1,430 people, so a base of around 14,300. Showing that gap honestly is more useful than a perfect result, and it's a real problem in CRM teams with smaller bases.
+**Alternatives considered:**
+- Regenerate the data with 30,000 customers: cleaner result, but it hides the test-design lesson.
+- Report the 38% lift as fact: misleading, since it could be chance.
+**How I'd fix it in a real business:** Increase the holdout (e.g. 20%), run the test across several campaigns and pool the results, or use a persistent "never mailed" control group over a quarter. Decide the required sample size before launch, not after.
