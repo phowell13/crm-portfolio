@@ -2,7 +2,7 @@
 
 Practical CRM and marketing automation projects: segmentation, scoring, testing and measurement, built on synthetic data.
 
-> ✏️ _One or two lines about you, e.g. "CRM & marketing automation specialist with 9+ years across Salesforce Marketing Cloud, SQL and customer analytics. This repo shows how I approach real CRM problems."_
+CRM and Marketing Automation specialist with 7+ years’ experience delivering lifecycle journeys, loyalty communications and BAU campaigns across high-volume, customer-centric environments. Strong hands-on capability across Salesforce Marketing Cloud, advanced SQL, and data-driven segmentation
 
 ## Projects
 
@@ -20,7 +20,7 @@ Practical CRM and marketing automation projects: segmentation, scoring, testing 
 - **CRM KPI dashboard:** Looker Studio dashboard of retention, LTV and channel performance
 
 ## Contact
-> ✏️ _LinkedIn link and email_
+https://www.linkedin.com/in/philhowellhp/
 
 ---
 _All data in this repo is synthetic. No employer data, code or proprietary logic is included._
