@@ -39,3 +39,16 @@ Keep entries short. Add a new one whenever you change your mind; the history is 
 - Unique opens only: cleaner and harder to inflate, but it undervalues the most engaged readers.
 - All clicks: double-counts people clicking several links in one email.
 **How I'd check it:** Repeat opens can come from forwarding, security scanners or Apple's privacy feature rather than the person. Check the distribution of opens per email per subscriber. If a small group has extreme counts (e.g. 20+ opens of one email), cap opens per email (e.g. max 5) and record that as a new decision.
+
+
+### 2026-11-06 Recency weighting: time buckets
+**Decision:** Weight activity by how recent it is, using three time buckets:
+- 0–30 days: ×1.0 (full value)
+- 31–90 days: ×0.6
+- 91–180 days: ×0.3
+
+**Why:** Buckets are easy to explain to marketers and stakeholders ("recent activity counts most, older activity counts less") and simple to build in an SFMC Query Activity with a CASE statement. The weights are a starting point, to be tuned against results.
+**Alternatives considered:**
+- Smooth decay (activity loses half its value every 45 days): more precise, with no sudden drop when activity moves from one bucket to the next. It's harder to explain, though. If stakeholders were comfortable with the idea of a "half-life", decay would be a good upgrade, and it could be tested side by side against the buckets.
+- No weighting: an open 5 months ago would count the same as one yesterday (rejected in the lookback decision).
+**How I'd check it:** Look at customers just either side of a bucket boundary (e.g. last active 29 vs 31 days ago). If their scores jump sharply for no real difference in behaviour, adjust the weights or move to smooth decay.
