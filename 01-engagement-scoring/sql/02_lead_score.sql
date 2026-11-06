@@ -1,0 +1,23 @@
+-- ===========================================================================
+-- B2B lead score
+-- ===========================================================================
+-- YOUR LOGIC GOES HERE. This file is an outline only.
+--
+-- Goal: one row per lead with a score and a status (e.g. Nurture / MQL),
+-- deciding when a lead is handed to sales.
+--
+-- Available tables: leads, lead_activity, opportunities (outcome, for testing only)
+--
+-- Classic lead scoring combines two parts. Decide how you'll handle each:
+--   Fit       Who they are: company size, job level, industry
+--   Intent    What they do: email clicks, web visits, pricing page, forms, webinars
+--
+-- Questions to answer (record each answer in DECISIONS.md):
+--   1. Points per activity. Is a pricing page visit worth more than an email open?
+--   2. Decay. Should activity from 6 months ago still count?
+--   3. Negative scoring. Any signals that should reduce a score?
+--   4. MQL threshold. Where do you set it, and how do you check it's right?
+--      (Hint: compare against the opportunities table, but don't build the
+--      score from it.)
+--
+-- Run: python scripts/run_sql.py sql/02_lead_score.sql --out data/output/lead_score.csv

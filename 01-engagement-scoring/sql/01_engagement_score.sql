@@ -1,0 +1,45 @@
+-- ===========================================================================
+-- B2C email engagement score
+-- ===========================================================================
+-- YOUR LOGIC GOES HERE. This file is an outline only.
+--
+-- Goal: one row per subscriber with an engagement score and a band, which a
+-- journey can use to decide the route (e.g. email only vs print path).
+--
+-- Available tables (SFMC-style): _Job, _Sent, _Open, _Click, customers
+-- Use as_of() for "today" (2026-10-31) instead of GETDATE().
+--
+-- Questions to answer (record each answer in DECISIONS.md):
+--   1. Lookback window. SFMC data views only keep about 6 months of history.
+--      What window will you use, and why?
+--   2. Signals. Opens, clicks, or both? How much more is a click worth?
+--      What about Apple Mail Privacy Protection inflating opens?
+--   3. Recency. Should an open last week count more than one 5 months ago?
+--      Fixed buckets, or a decay?
+--   4. Rates vs counts. Someone sent 10 emails who opened 5 vs someone sent
+--      50 who opened 10. Who is more engaged?
+--   5. New subscribers. How do you treat people with very few sends?
+--   6. Bands. How many, what thresholds, and how did you choose them?
+--
+-- Suggested structure:
+--
+-- WITH sends AS (
+--     -- emails sent per subscriber in the window
+-- ),
+-- opens AS (
+--     -- unique opens per subscriber, maybe weighted by recency
+-- ),
+-- clicks AS (
+--     -- unique clicks per subscriber, maybe weighted by recency
+-- ),
+-- scored AS (
+--     -- combine into a score
+-- )
+-- SELECT
+--     SubscriberKey,
+--     ...,
+--     EngagementScore,
+--     CASE ... END AS EngagementBand
+-- FROM scored
+--
+-- Run: python scripts/run_sql.py sql/01_engagement_score.sql --out data/output/engagement_score.csv

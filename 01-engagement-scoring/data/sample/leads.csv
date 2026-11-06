@@ -1,0 +1,21 @@
+LeadID,CreatedDate,Industry,CompanySize,JobLevel,LeadSource
+L200000,2026-03-15,Retail,50-249,Manager,Paid Search
+L200001,2026-08-29,Retail,1-49,Individual,Organic
+L200002,2026-06-28,Retail,1000+,Individual,Event
+L200003,2026-08-13,Healthcare,50-249,Exec,Organic
+L200004,2026-10-06,Retail,1000+,Director,Event
+L200005,2026-08-05,Education,250-999,Director,Referral
+L200006,2026-08-25,Manufacturing,1-49,Manager,Content Download
+L200007,2026-09-12,Education,250-999,Individual,Referral
+L200008,2026-03-25,Manufacturing,1-49,Manager,Organic
+L200009,2026-07-20,Healthcare,50-249,Director,Content Download
+L200010,2026-05-14,Healthcare,1-49,Manager,Organic
+L200011,2026-07-15,Education,1000+,Manager,Content Download
+L200012,2026-07-21,Education,250-999,Manager,Referral
+L200013,2026-08-10,Manufacturing,1-49,Director,Referral
+L200014,2026-09-14,Education,250-999,Director,Organic
+L200015,2026-08-13,Education,250-999,Director,Event
+L200016,2026-10-10,Healthcare,1-49,Director,Event
+L200017,2026-08-28,Manufacturing,1-49,Director,Content Download
+L200018,2026-05-09,Healthcare,50-249,Individual,Event
+L200019,2026-03-07,Education,1-49,Director,Paid Search
