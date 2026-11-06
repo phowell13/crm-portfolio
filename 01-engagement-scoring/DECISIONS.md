@@ -52,3 +52,21 @@ Keep entries short. Add a new one whenever you change your mind; the history is 
 - Smooth decay (activity loses half its value every 45 days): more precise, with no sudden drop when activity moves from one bucket to the next. It's harder to explain, though. If stakeholders were comfortable with the idea of a "half-life", decay would be a good upgrade, and it could be tested side by side against the buckets.
 - No weighting: an open 5 months ago would count the same as one yesterday (rejected in the lookback decision).
 **How I'd check it:** Look at customers just either side of a bucket boundary (e.g. last active 29 vs 31 days ago). If their scores jump sharply for no real difference in behaviour, adjust the weights or move to smooth decay.
+
+### 2026-11-06 Engagement bands: five fixed-score bands
+**Decision:** Group subscribers into five bands using fixed score thresholds:
+
+| Band | Score | Share of base | Journey action | Print? |
+|---|---|---|---|---|
+| Highly engaged | 10+ | 25% | Email only | Never |
+| Engaged | 4.6–9.9 | 25% | Normal programme | Never |
+| Lapsing | 2–4.5 | 20% | Re-engagement journey | Allowed |
+| Dormant | 0.75–1.9 | 13% | Light-touch re-engagement email | Allowed |
+| Inactive | below 0.75 | 17% | Print or SMS win-back, or suppress from email | Allowed |
+
+**Why:** Fixed scores keep a steady definition of "engaged" over time, so band changes reflect real changes in behaviour rather than a moving bar. The top two thresholds sit at the top quartile (10) and the median (4.6) of the first run, so the bands start at sensible sizes. The bottom of the base is split into Dormant and Inactive so people with some recent activity aren't written off. An open-cap of 0.75 means Inactive holds people with no activity, or only one or two old opens, which may be automatic opens from Apple Mail Privacy Protection rather than real engagement.
+**Alternatives considered:**
+- Percentage bands (e.g. top 25%): always even groups, but the bar moves as the base becomes more or less engaged.
+- Four bands with Dormant starting at 0.1: Lapsing held 40% of the base, too broad to act on.
+- Four bands with Dormant starting at 2: Dormant tripled to 30%, including 533 people still showing some activity.
+**How I'd check it:** Compare conversion and orders by band. Each band should perform clearly better than the one below. Review band sizes monthly; if a band grows or shrinks sharply, check whether behaviour changed or the thresholds need revisiting.
